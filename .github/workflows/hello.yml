@@ -1,0 +1,9 @@
+name: actions
+on:
+  push:
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greetings
+        run: echo "greetings from actions"
