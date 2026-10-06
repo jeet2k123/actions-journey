@@ -1,0 +1,13 @@
+name: status
+on:
+  push:
+jobs:
+  stat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+      - name: print runner kernel details
+        run: uname -a
+      - name: list files
+        run: ls -l
